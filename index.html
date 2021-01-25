@@ -3,15 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- fontawesome css -->
+    <title>Pioneer Bank</title>
+    <!-- font awesome css -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- main css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
   </head>
   <body>
+    <main>
+      <!-- log in page start -->
+      <section id="login-page" class="container pt-5 mt-5">
+        <h1 class="text-center">Welcome to Pioneer Bank</h1>
+        <div class="submit-area mt-5 p-5 rounded shadow-lg">
+          <h4>Login</h4>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter Your Email"
+          />
+          <input
+            type="password"
+            class="form-control mt-3"
+            placeholder="Enter Your password"
+          />
+          <button id="login" class="btn btn-success mt-3">Enter</button>
+        </div>
+      </section>
+      <!-- log in page part end -->
+      <!-- account information area start -->
+      <section id="transaction-area" class="mt-5 pt-5">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-md-4 bg-danger p-5">
+              <h5>Deposit</h5>
+              <h2>$00</h2>
+            </div>
+            <div class="col-md-4 bg-warning p-5">
+              <h5>Withdraw</h5>
+              <h2>$00</h2>
+            </div>
+            <div class="col-md-4 bg-success p-5">
+              <h5>Balance</h5>
+              <h2>$5000000</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- account information area end -->
+      <!-- banking part start -->
+      <section id="banking-area">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6 p-5 shadow-lg rounded">
+              <h4>Deposit</h4>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="$amount you want to deposit"
+              />
+              <button class="btn btn-success mt-3">Deposit</button>
+            </div>
+            <div class="col-md-6 p-5 shadow-lg rounded">
+              <h4>Withdraw</h4>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="$amount you want to withdraw"
+              />
+              <button class="btn btn-success mt-3">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banking part end -->
+    </main>
+    <!-- custom js -->
+    <script src="assets/custom.js"></script>
+    <!-- bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
