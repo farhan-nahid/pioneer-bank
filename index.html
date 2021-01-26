@@ -34,47 +34,65 @@
         </div>
       </section>
       <!-- log in page part end -->
+
       <!-- account information area start -->
-      <section id="transaction-area" class="mt-5 pt-5">
+      <section id="transaction-area" class="mt-5 text-center pt-5 text-white">
         <div class="container">
-          <div class="row text-center text-white">
-            <div class="col-md-4 bg-danger p-5">
-              <h5>Deposit</h5>
-              <h2>$00</h2>
+          <div class="row gx-5">
+            <div class="col-md-4">
+              <div class="bg-danger p-5 rounded shadow-lg">
+                <h5>Deposit</h5>
+                <h2>$<span id="current-deposit">00</span></h2>
+              </div>
             </div>
-            <div class="col-md-4 bg-warning p-5">
-              <h5>Withdraw</h5>
-              <h2>$00</h2>
+            <div class="col-md-4">
+              <div class="bg-warning p-5 rounded shadow-lg">
+                <h5>Withdraw</h5>
+                <h2>$ <span id="current-withdraw">00</span></h2>
+              </div>
             </div>
-            <div class="col-md-4 bg-success p-5">
-              <h5>Balance</h5>
-              <h2>$5000000</h2>
+            <div class="col-md-4">
+              <div class="bg-success p-5 rounded shadow-lg">
+                <h5>Balance</h5>
+                <h2>$<span id="current-balance">50000</span></h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- account information area end -->
+
       <!-- banking part start -->
       <section id="banking-area">
         <div class="container mt-5">
-          <div class="row">
-            <div class="col-md-6 p-5 shadow-lg rounded">
-              <h4>Deposit</h4>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="$amount you want to deposit"
-              />
-              <button class="btn btn-success mt-3">Deposit</button>
+          <div class="row gx-5">
+            <div class="col-md-6">
+              <div class="p-5 shadow-lg rounded">
+                <h4>Deposit</h4>
+                <input
+                  type="number"
+                  id="deposit-amount"
+                  class="form-control"
+                  placeholder="$amount you want to deposit"
+                />
+                <button id="add-deposit" class="btn btn-success mt-3">
+                  Deposit
+                </button>
+              </div>
             </div>
-            <div class="col-md-6 p-5 shadow-lg rounded">
-              <h4>Withdraw</h4>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="$amount you want to withdraw"
-              />
-              <button class="btn btn-success mt-3">Withdraw</button>
+            <div class="col-md-6">
+              <div class="p-5 shadow-lg rounded">
+                <h4>Withdraw</h4>
+                <input
+                  type="number"
+                  id="withdraw-amount"
+                  class="form-control"
+                  placeholder="$amount you want to withdraw"
+                />
+                <button id="add-withdraw" class="btn btn-success mt-3">
+                  Withdraw
+                </button>
+              </div>
             </div>
           </div>
         </div>
