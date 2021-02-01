@@ -4,3 +4,10 @@
 #banking-area {
   display: none;
 }
+input::-webkit-inner-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
